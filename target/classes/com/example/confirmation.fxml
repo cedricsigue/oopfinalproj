@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ConfirmationController"
+      spacing="20" alignment="CENTER" prefHeight="400" prefWidth="600"
+      style="-fx-padding: 40;">
+    <Label fx:id="carLabel" style="-fx-font-size: 20;" />
+    <Label fx:id="priceLabel" style="-fx-font-size: 16;" />
+    <Button text="Confirm Rental" onAction="#confirmRental" />
+</VBox>
