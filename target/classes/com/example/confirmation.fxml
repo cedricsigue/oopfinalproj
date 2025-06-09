@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
 
-<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ConfirmationController"
-      spacing="20" alignment="CENTER" prefHeight="400" prefWidth="600"
-      style="-fx-padding: 40;">
-    <Label fx:id="carLabel" style="-fx-font-size: 20;" />
-    <Label fx:id="priceLabel" style="-fx-font-size: 16;" />
-    <Button text="Confirm Rental" onAction="#confirmRental" />
-</VBox>
+<Pane prefHeight="400.0" prefWidth="600.0" fx:controller="com.example.ConfirmationController"
+      xmlns:fx="http://javafx.com/fxml/1">
+
+    <children>
+        <Label fx:id="summaryLabel" layoutX="30" layoutY="30"
+               style="-fx-font-size: 16px; -fx-text-fill: black;" wrapText="true" prefWidth="540" />
+        <Label fx:id="thankYouLabel" layoutX="200" layoutY="240"
+               style="-fx-font-size: 18px; -fx-text-fill: green;" />
+        <Button text="Confirm Rental" layoutX="230" layoutY="300" onAction="#confirmRental" />
+    </children>
+</Pane>
