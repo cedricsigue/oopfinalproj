@@ -49,15 +49,7 @@ public class CatalogController {
     private void selectCar8(ActionEvent event) throws IOException {
         goToRentalForm(event, "You have selected Sports-Car 8: Aston Martin a day.", 8500);
     }
-
-    /**
-     * Loads the RentalForm.fxml file and passes car info to it.
-     *
-     * @param event      The button event that triggered this method.
-     * @param carModel   The selected car model.
-     * @param price      The daily rental price of the car.
-     * @throws IOException if the FXML file cannot be loaded.
-     */
+    
     private void goToRentalForm(ActionEvent event, String carModel, int price) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("RentalForm.fxml"));
         Scene scene = new Scene(loader.load());
