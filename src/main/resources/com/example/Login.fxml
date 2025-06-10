@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="832.0" prefWidth="1280.0" stylesheets="@../../../../../../../../Desktop/Example/yuenci-Java-Car-Rental-System-0632522/target/classes/com/example/car_rental_sys/style/general.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.car_rental_sys.controllers.loginPageController">
+<Pane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="832.0" prefWidth="1280.0" stylesheets="@../../../../../../../../Desktop/Example/yuenci-Java-Car-Rental-System-0632522/target/classes/com/example/car_rental_sys/style/general.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.LoginController">
    <children>
       <ImageView fitHeight="832.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -90,21 +90,6 @@
       <ImageView fx:id="emailImageView" fitHeight="20.0" fitWidth="20.0" layoutX="747.0" layoutY="303.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../../../../../../Desktop/Example/yuenci-Java-Car-Rental-System-0632522/target/classes/com/example/car_rental_sys/image/UI/mailIcon.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="747.0" layoutY="377.0" onMouseClicked="#showPasswordIconClick" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
-         <image>
-            <Image url="@../../../../../../../../Desktop/Example/yuenci-Java-Car-Rental-System-0632522/target/classes/com/example/car_rental_sys/image/UI/viewIcon.png" />
-         </image>
-      </ImageView>
-      <Label fx:id="tipLabel" layoutX="419.0" layoutY="203.0" prefHeight="67.0" prefWidth="443.0" text="To keep connect with please login with your personal info" textAlignment="CENTER" textFill="#818181" wrapText="true">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Label>
-      <ImageView fitHeight="33.0" fitWidth="261.0" layoutX="511.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../../../../../Desktop/Example/yuenci-Java-Car-Rental-System-0632522/target/classes/com/example/car_rental_sys/image/UI/welcomeSlogan.png" />
          </image>
       </ImageView>
    </children>
