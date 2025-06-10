@@ -13,22 +13,41 @@ public class CatalogController {
 
     @FXML
     private void selectCar1(ActionEvent event) throws IOException {
-        goToRentalForm(event, "Car 1: Sedan", 50);
+        goToRentalForm(event, "You have selected Sport-Car 1: MC-Laren a day.", 5000);
     }
 
     @FXML
     private void selectCar2(ActionEvent event) throws IOException {
-        goToRentalForm(event, "Car 2: SUV", 70);
+        goToRentalForm(event, "You have selected Sports-Car 2: Buggati a day.", 7000);
     }
 
     @FXML
     private void selectCar3(ActionEvent event) throws IOException {
-        goToRentalForm(event, "Car 3: Convertible", 90);
+        goToRentalForm(event, "You have selected Sports-Car 3: Chevrolet a day.", 4500);
     }
 
     @FXML
     private void selectCar4(ActionEvent event) throws IOException {
-        goToRentalForm(event, "Car 4: Truck", 80);
+        goToRentalForm(event, "You have selected Sports-Car 4: Honda-Acura a day.", 6000);
+    }
+
+    @FXML
+    private void selectCar5(ActionEvent event) throws IOException {
+        goToRentalForm(event, "You have selected Sports-Car 5: Lotus-Evija a day.", 2000);
+    }
+    @FXML
+    private void selectCar6(ActionEvent event) throws IOException {
+        goToRentalForm(event, "You have selected Sports-Car 6: Noble-M500 aday.", 2000);
+    }
+
+    @FXML
+    private void selectCar7(ActionEvent event) throws IOException {
+        goToRentalForm(event, "You have selected Sports-Car 7: Mc-Laren a day..", 4000);
+    }
+
+    @FXML
+    private void selectCar8(ActionEvent event) throws IOException {
+        goToRentalForm(event, "You have selected Sports-Car 8: Aston Martin a day.", 8500);
     }
 
     /**
