@@ -13,43 +13,43 @@ public class CatalogController {
 
     @FXML
     private void selectCar1(ActionEvent event) throws IOException {
-        goToRentalForm(event, "You have selected Sport-Car 1: MC-Laren a day.", 5000);
+        goToRentalForm(event, "Sport-Car 1: MC-Laren", 2000);
     }
 
     @FXML
     private void selectCar2(ActionEvent event) throws IOException {
-        goToRentalForm(event, "You have selected Sports-Car 2: Buggati a day.", 7000);
+        goToRentalForm(event, "Sports-Car 2: Buggati", 4000);
     }
 
     @FXML
     private void selectCar3(ActionEvent event) throws IOException {
-        goToRentalForm(event, "You have selected Sports-Car 3: Chevrolet a day.", 4500);
+        goToRentalForm(event, "Sports-Car 3: Chevrolet", 4500);
     }
 
     @FXML
     private void selectCar4(ActionEvent event) throws IOException {
-        goToRentalForm(event, "You have selected Sports-Car 4: Honda-Acura a day.", 6000);
+        goToRentalForm(event, "Sports-Car 4: Honda-Acura", 6000);
     }
 
     @FXML
     private void selectCar5(ActionEvent event) throws IOException {
-        goToRentalForm(event, "You have selected Sports-Car 5: Lotus-Evija a day.", 2000);
+        goToRentalForm(event, "Sports-Car 5: Lotus-Evija", 2000);
     }
     @FXML
     private void selectCar6(ActionEvent event) throws IOException {
-        goToRentalForm(event, "You have selected Sports-Car 6: Noble-M500 aday.", 2000);
+        goToRentalForm(event, "Sports-Car 6: Noble-M500", 2000);
     }
 
     @FXML
     private void selectCar7(ActionEvent event) throws IOException {
-        goToRentalForm(event, "You have selected Sports-Car 7: Mc-Laren a day..", 4000);
+        goToRentalForm(event, "Sports-Car 7: Terzo-Milleno", 2000);
     }
 
     @FXML
     private void selectCar8(ActionEvent event) throws IOException {
-        goToRentalForm(event, "You have selected Sports-Car 8: Aston Martin a day.", 8500);
+        goToRentalForm(event, "Sports-Car 8: MC-Laren", 4000);
     }
-    
+
     private void goToRentalForm(ActionEvent event, String carModel, int price) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("RentalForm.fxml"));
         Scene scene = new Scene(loader.load());

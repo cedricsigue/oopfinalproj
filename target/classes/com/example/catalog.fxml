@@ -13,203 +13,203 @@
 
 <AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.CatalogController">
     <children>
-      <Pane layoutY="-8.0" prefHeight="876.0" prefWidth="1467.0" styleClass="offer-background">
-         <children>
-            <VBox layoutX="24.0" layoutY="233.0" spacing="20" />
-            <Label alignment="CENTER" layoutX="454.0" layoutY="28.0" prefHeight="106.0" prefWidth="402.0" style="-fx-font-size: 30; -fx-text-fill: white;" styleClass="offer-background" stylesheets="@../../../../../../oop_project/oop_project/carrental/src/main/resources/style/css/Catalog.css" text="Available Cars" textFill="WHITE">
-               <font>
-                  <Font size="30.0" />
-               </font>
-            </Label>
-            <Pane layoutX="24.0" layoutY="172.0" prefHeight="275.0" prefWidth="304.0" styleClass="offer-background">
-               <children>
-                  <Button layoutX="8.0" layoutY="226.0" onAction="#selectCar1" prefHeight="35.0" prefWidth="207.0" text="SportCars 1: MC-Laren - $2000/day" textFill="WHITE">
-                     <stylesheets>
+        <Pane layoutY="-8.0" prefHeight="876.0" prefWidth="1467.0" styleClass="offer-background">
+            <children>
+                <VBox layoutX="24.0" layoutY="233.0" spacing="20" />
+                <Label alignment="CENTER" layoutX="454.0" layoutY="28.0" prefHeight="106.0" prefWidth="402.0" style="-fx-font-size: 30; -fx-text-fill: white;" styleClass="offer-background" stylesheets="@../../../../../../oop_project/oop_project/carrental/src/main/resources/style/css/Catalog.css" text="Available Cars" textFill="WHITE">
+                    <font>
+                        <Font size="30.0" />
+                    </font>
+                </Label>
+                <Pane layoutX="24.0" layoutY="172.0" prefHeight="275.0" prefWidth="304.0" styleClass="offer-background">
+                    <children>
+                        <Button layoutX="8.0" layoutY="226.0" mnemonicParsing="false" onAction="#selectCar1" prefHeight="35.0" prefWidth="207.0" text="SportCars 1: MC-Laren - $2000/day" textFill="WHITE">
+                            <stylesheets>
+                                <URL value="@../../../../../../oop_project/oop_project/carrental/src/main/resources/style/css/Catalog.css" />
+                                <URL value="@../../../../../../oop_project/oop_project/carrental/src/main/resources/style/css/main.css" />
+                            </stylesheets>
+                            <styleClass>
+                                <String fx:value="transparent-button" />
+                                <String fx:value="operaBtnBlue" />
+                            </styleClass>
+                        </Button>
+                        <ImageView fx:id="car1Image" fitHeight="205.0" fitWidth="327.0" layoutY="-17.0" pickOnBounds="true" preserveRatio="true" styleClass="White-shadow">
+                            <image>
+                                <Image url="@../../image/Cars/McLaren_Senna.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                    <stylesheets>
                         <URL value="@../../../../../../oop_project/oop_project/carrental/src/main/resources/style/css/Catalog.css" />
                         <URL value="@../../../../../../oop_project/oop_project/carrental/src/main/resources/style/css/main.css" />
-                     </stylesheets>
-                     <styleClass>
-                        <String fx:value="transparent-button" />
-                        <String fx:value="operaBtnBlue" />
-                     </styleClass>
-                  </Button>
-                  <ImageView fitHeight="205.0" fitWidth="327.0" layoutY="-17.0" pickOnBounds="true" preserveRatio="true" styleClass="White-shadow">
-                     <image>
-                        <Image url="@../../image/Cars/McLaren_Senna.png" />
-                     </image>
-                  </ImageView>
-               </children>
-               <stylesheets>
-                  <URL value="@../../../../../../oop_project/oop_project/carrental/src/main/resources/style/css/Catalog.css" />
-                  <URL value="@../../../../../../oop_project/oop_project/carrental/src/main/resources/style/css/main.css" />
-               </stylesheets>
-            </Pane>
-            <Pane layoutX="342.0" layoutY="172.0" prefHeight="275.0" prefWidth="304.0" styleClass="offer-background">
-               <children>
-                  <ImageView fitHeight="205.0" fitWidth="260.0" layoutX="22.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" styleClass="White-shadow">
-                     <image>
-                        <Image url="@../../image/Cars/Bugatti_Divo.png" />
-                     </image>
-                  </ImageView>
-                  <Button layoutX="8.0" layoutY="226.0" onAction="#selectCar2" prefHeight="35.0" prefWidth="207.0" text="SportCars 2: Buggati - $4000/day" textFill="WHITE">
-                     <stylesheets>
+                    </stylesheets>
+                </Pane>
+                <Pane layoutX="342.0" layoutY="172.0" prefHeight="275.0" prefWidth="304.0" styleClass="offer-background">
+                    <children>
+                        <ImageView fx:id="car2Image" fitHeight="205.0" fitWidth="260.0" layoutX="22.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" styleClass="White-shadow">
+                            <image>
+                                <Image url="@../../image/Cars/Bugatti_Divo.png" />
+                            </image>
+                        </ImageView>
+                        <Button layoutX="8.0" layoutY="226.0" mnemonicParsing="false" onAction="#selectCar2" prefHeight="35.0" prefWidth="207.0" text="SportCars 2: Buggati - $4000/day" textFill="WHITE">
+                            <stylesheets>
+                                <URL value="@../../../../../../oop_project/oop_project/carrental/src/main/resources/style/css/Catalog.css" />
+                                <URL value="@../../../../../../oop_project/oop_project/carrental/src/main/resources/style/css/main.css" />
+                            </stylesheets>
+                            <styleClass>
+                                <String fx:value="transparent-button" />
+                                <String fx:value="operaBtnBlue" />
+                            </styleClass>
+                        </Button>
+                    </children>
+                    <stylesheets>
                         <URL value="@../../../../../../oop_project/oop_project/carrental/src/main/resources/style/css/Catalog.css" />
                         <URL value="@../../../../../../oop_project/oop_project/carrental/src/main/resources/style/css/main.css" />
-                     </stylesheets>
-                     <styleClass>
-                        <String fx:value="transparent-button" />
-                        <String fx:value="operaBtnBlue" />
-                     </styleClass>
-                  </Button>
-               </children>
-               <stylesheets>
-                  <URL value="@../../../../../../oop_project/oop_project/carrental/src/main/resources/style/css/Catalog.css" />
-                  <URL value="@../../../../../../oop_project/oop_project/carrental/src/main/resources/style/css/main.css" />
-               </stylesheets>
-            </Pane>
-            <Pane layoutX="673.0" layoutY="172.0" prefHeight="275.0" prefWidth="304.0" styleClass="offer-background">
-               <children>
-                  <Button layoutX="8.0" layoutY="226.0" onAction="#selectCar3" prefHeight="35.0" prefWidth="207.0" text="SportCars 3: Chevrolet - $4500/day" textFill="WHITE">
-                     <stylesheets>
+                    </stylesheets>
+                </Pane>
+                <Pane layoutX="673.0" layoutY="172.0" prefHeight="275.0" prefWidth="304.0" styleClass="offer-background">
+                    <children>
+                        <Button layoutX="8.0" layoutY="226.0" mnemonicParsing="false" onAction="#selectCar3" prefHeight="35.0" prefWidth="207.0" text="SportCars 3: Chevrolet - $4500/day" textFill="WHITE">
+                            <stylesheets>
+                                <URL value="@../../../../../../oop_project/oop_project/carrental/src/main/resources/style/css/Catalog.css" />
+                                <URL value="@../../../../../../oop_project/oop_project/carrental/src/main/resources/style/css/main.css" />
+                            </stylesheets>
+                            <styleClass>
+                                <String fx:value="transparent-button" />
+                                <String fx:value="operaBtnBlue" />
+                            </styleClass>
+                        </Button>
+                        <ImageView fx:id="car3Image" fitHeight="205.0" fitWidth="327.0" layoutX="1.0" layoutY="-17.0" pickOnBounds="true" preserveRatio="true" styleClass="White-shadow">
+                            <image>
+                                <Image url="@../../image/Cars/Chevrolet_Corvette.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                    <stylesheets>
                         <URL value="@../../../../../../oop_project/oop_project/carrental/src/main/resources/style/css/Catalog.css" />
                         <URL value="@../../../../../../oop_project/oop_project/carrental/src/main/resources/style/css/main.css" />
-                     </stylesheets>
-                     <styleClass>
-                        <String fx:value="transparent-button" />
-                        <String fx:value="operaBtnBlue" />
-                     </styleClass>
-                  </Button>
-                  <ImageView fitHeight="205.0" fitWidth="327.0" layoutX="1.0" layoutY="-17.0" pickOnBounds="true" preserveRatio="true" styleClass="White-shadow">
-                     <image>
-                        <Image url="@../../image/Cars/Chevrolet_Corvette.png" />
-                     </image>
-                  </ImageView>
-               </children>
-               <stylesheets>
-                  <URL value="@../../../../../../oop_project/oop_project/carrental/src/main/resources/style/css/Catalog.css" />
-                  <URL value="@../../../../../../oop_project/oop_project/carrental/src/main/resources/style/css/main.css" />
-               </stylesheets>
-            </Pane>
-            <Pane layoutX="1008.0" layoutY="172.0" prefHeight="275.0" prefWidth="304.0" styleClass="offer-background">
-               <children>
-                  <Button layoutX="8.0" layoutY="226.0" onAction="#selectCar4" prefHeight="35.0" prefWidth="228.0" text="SportCars 4: Honda-Acura - $6000/day" textFill="WHITE">
-                     <stylesheets>
+                    </stylesheets>
+                </Pane>
+                <Pane layoutX="1008.0" layoutY="172.0" prefHeight="275.0" prefWidth="304.0" styleClass="offer-background">
+                    <children>
+                        <Button layoutX="8.0" layoutY="226.0" mnemonicParsing="false" onAction="#selectCar4" prefHeight="35.0" prefWidth="228.0" text="SportCars 4: Honda-Acura - $6000/day" textFill="WHITE">
+                            <stylesheets>
+                                <URL value="@../../../../../../oop_project/oop_project/carrental/src/main/resources/style/css/Catalog.css" />
+                                <URL value="@../../../../../../oop_project/oop_project/carrental/src/main/resources/style/css/main.css" />
+                            </stylesheets>
+                            <styleClass>
+                                <String fx:value="transparent-button" />
+                                <String fx:value="operaBtnBlue" />
+                            </styleClass>
+                        </Button>
+                        <ImageView fx:id="car4Image" fitHeight="205.0" fitWidth="327.0" layoutY="-17.0" pickOnBounds="true" preserveRatio="true" styleClass="White-shadow">
+                            <image>
+                                <Image url="@../../image/Cars/Honda_Acura_NSX.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                    <stylesheets>
                         <URL value="@../../../../../../oop_project/oop_project/carrental/src/main/resources/style/css/Catalog.css" />
                         <URL value="@../../../../../../oop_project/oop_project/carrental/src/main/resources/style/css/main.css" />
-                     </stylesheets>
-                     <styleClass>
-                        <String fx:value="transparent-button" />
-                        <String fx:value="operaBtnBlue" />
-                     </styleClass>
-                  </Button>
-                  <ImageView fitHeight="205.0" fitWidth="327.0" layoutY="-17.0" pickOnBounds="true" preserveRatio="true" styleClass="White-shadow">
-                     <image>
-                        <Image url="@../../image/Cars/Honda_Acura_NSX.png" />
-                     </image>
-                  </ImageView>
-               </children>
-               <stylesheets>
-                  <URL value="@../../../../../../oop_project/oop_project/carrental/src/main/resources/style/css/Catalog.css" />
-                  <URL value="@../../../../../../oop_project/oop_project/carrental/src/main/resources/style/css/main.css" />
-               </stylesheets>
-            </Pane>
-            <Pane layoutX="24.0" layoutY="468.0" prefHeight="275.0" prefWidth="304.0" styleClass="offer-background">
-               <children>
-                  <Button layoutX="8.0" layoutY="226.0" onAction="#selectCar1" prefHeight="35.0" prefWidth="207.0" text="SportCars 5: Lotus-Evija - $2000/day" textFill="WHITE">
-                     <stylesheets>
+                    </stylesheets>
+                </Pane>
+                <Pane layoutX="24.0" layoutY="468.0" prefHeight="275.0" prefWidth="304.0" styleClass="offer-background">
+                    <children>
+                        <Button layoutX="8.0" layoutY="226.0" mnemonicParsing="false" onAction="#selectCar5" prefHeight="35.0" prefWidth="207.0" text="SportCars 5: Lotus-Evija - $2000/day" textFill="WHITE">
+                            <stylesheets>
+                                <URL value="@../../../../../../oop_project/oop_project/carrental/src/main/resources/style/css/Catalog.css" />
+                                <URL value="@../../../../../../oop_project/oop_project/carrental/src/main/resources/style/css/main.css" />
+                            </stylesheets>
+                            <styleClass>
+                                <String fx:value="transparent-button" />
+                                <String fx:value="operaBtnBlue" />
+                            </styleClass>
+                        </Button>
+                        <ImageView fx:id="car5Image" fitHeight="205.0" fitWidth="327.0" layoutY="-17.0" pickOnBounds="true" preserveRatio="true" styleClass="White-shadow">
+                            <image>
+                                <Image url="@../../image/Cars/Lotus_Evija_Fittipaldi.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                    <stylesheets>
                         <URL value="@../../../../../../oop_project/oop_project/carrental/src/main/resources/style/css/Catalog.css" />
                         <URL value="@../../../../../../oop_project/oop_project/carrental/src/main/resources/style/css/main.css" />
-                     </stylesheets>
-                     <styleClass>
-                        <String fx:value="transparent-button" />
-                        <String fx:value="operaBtnBlue" />
-                     </styleClass>
-                  </Button>
-                  <ImageView fitHeight="205.0" fitWidth="327.0" layoutY="-17.0" pickOnBounds="true" preserveRatio="true" styleClass="White-shadow">
-                     <image>
-                        <Image url="@../../image/Cars/Lotus_Evija_Fittipaldi.png" />
-                     </image>
-                  </ImageView>
-               </children>
-               <stylesheets>
-                  <URL value="@../../../../../../oop_project/oop_project/carrental/src/main/resources/style/css/Catalog.css" />
-                  <URL value="@../../../../../../oop_project/oop_project/carrental/src/main/resources/style/css/main.css" />
-               </stylesheets>
-            </Pane>
-            <Pane layoutX="342.0" layoutY="468.0" prefHeight="275.0" prefWidth="304.0" styleClass="offer-background">
-               <children>
-                  <Button layoutX="8.0" layoutY="226.0" onAction="#selectCar1" prefHeight="35.0" prefWidth="207.0" text="SportCars 6: Noble-M500 - $2000/day" textFill="WHITE">
-                     <stylesheets>
+                    </stylesheets>
+                </Pane>
+                <Pane layoutX="342.0" layoutY="468.0" prefHeight="275.0" prefWidth="304.0" styleClass="offer-background">
+                    <children>
+                        <Button layoutX="8.0" layoutY="226.0" mnemonicParsing="false" onAction="#selectCar6" prefHeight="35.0" prefWidth="207.0" text="SportCars 6: Noble-M500 - $2000/day" textFill="WHITE">
+                            <stylesheets>
+                                <URL value="@../../../../../../oop_project/oop_project/carrental/src/main/resources/style/css/Catalog.css" />
+                                <URL value="@../../../../../../oop_project/oop_project/carrental/src/main/resources/style/css/main.css" />
+                            </stylesheets>
+                            <styleClass>
+                                <String fx:value="transparent-button" />
+                                <String fx:value="operaBtnBlue" />
+                            </styleClass>
+                        </Button>
+                        <ImageView fx:id="car6Image" fitHeight="205.0" fitWidth="327.0" layoutY="-17.0" pickOnBounds="true" preserveRatio="true" styleClass="White-shadow">
+                            <image>
+                                <Image url="@../../image/Cars/Noble_M500.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                    <stylesheets>
                         <URL value="@../../../../../../oop_project/oop_project/carrental/src/main/resources/style/css/Catalog.css" />
                         <URL value="@../../../../../../oop_project/oop_project/carrental/src/main/resources/style/css/main.css" />
-                     </stylesheets>
-                     <styleClass>
-                        <String fx:value="transparent-button" />
-                        <String fx:value="operaBtnBlue" />
-                     </styleClass>
-                  </Button>
-                  <ImageView fitHeight="205.0" fitWidth="327.0" layoutY="-17.0" pickOnBounds="true" preserveRatio="true" styleClass="White-shadow">
-                     <image>
-                        <Image url="@../../image/Cars/Noble_M500.png" />
-                     </image>
-                  </ImageView>
-               </children>
-               <stylesheets>
-                  <URL value="@../../../../../../oop_project/oop_project/carrental/src/main/resources/style/css/Catalog.css" />
-                  <URL value="@../../../../../../oop_project/oop_project/carrental/src/main/resources/style/css/main.css" />
-               </stylesheets>
-            </Pane>
-            <Pane layoutX="673.0" layoutY="468.0" prefHeight="275.0" prefWidth="304.0" styleClass="offer-background">
-               <children>
-                  <Button layoutX="8.0" layoutY="226.0" onAction="#selectCar1" prefHeight="35.0" prefWidth="228.0" text="SportCars 7: Terzo-Milleno - $2000/day" textFill="WHITE">
-                     <stylesheets>
+                    </stylesheets>
+                </Pane>
+                <Pane layoutX="673.0" layoutY="468.0" prefHeight="275.0" prefWidth="304.0" styleClass="offer-background">
+                    <children>
+                        <Button layoutX="8.0" layoutY="226.0" mnemonicParsing="false" onAction="#selectCar7" prefHeight="35.0" prefWidth="228.0" text="SportCars 7: Terzo-Milleno - $2000/day" textFill="WHITE">
+                            <stylesheets>
+                                <URL value="@../../../../../../oop_project/oop_project/carrental/src/main/resources/style/css/Catalog.css" />
+                                <URL value="@../../../../../../oop_project/oop_project/carrental/src/main/resources/style/css/main.css" />
+                            </stylesheets>
+                            <styleClass>
+                                <String fx:value="transparent-button" />
+                                <String fx:value="operaBtnBlue" />
+                            </styleClass>
+                        </Button>
+                        <ImageView fx:id="car7Image" fitHeight="205.0" fitWidth="327.0" layoutY="-17.0" pickOnBounds="true" preserveRatio="true" styleClass="White-shadow">
+                            <image>
+                                <Image url="@../../image/Cars/Terzo_Millennio.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                    <stylesheets>
                         <URL value="@../../../../../../oop_project/oop_project/carrental/src/main/resources/style/css/Catalog.css" />
                         <URL value="@../../../../../../oop_project/oop_project/carrental/src/main/resources/style/css/main.css" />
-                     </stylesheets>
-                     <styleClass>
-                        <String fx:value="transparent-button" />
-                        <String fx:value="operaBtnBlue" />
-                     </styleClass>
-                  </Button>
-                  <ImageView fitHeight="205.0" fitWidth="327.0" layoutY="-17.0" pickOnBounds="true" preserveRatio="true" styleClass="White-shadow">
-                     <image>
-                        <Image url="@../../image/Cars/Terzo_Millennio.png" />
-                     </image>
-                  </ImageView>
-               </children>
-               <stylesheets>
-                  <URL value="@../../../../../../oop_project/oop_project/carrental/src/main/resources/style/css/Catalog.css" />
-                  <URL value="@../../../../../../oop_project/oop_project/carrental/src/main/resources/style/css/main.css" />
-               </stylesheets>
-            </Pane>
-            <Pane layoutX="1008.0" layoutY="468.0" prefHeight="275.0" prefWidth="304.0" styleClass="offer-background">
-               <children>
-                  <Button layoutX="8.0" layoutY="226.0" onAction="#selectCar1" prefHeight="35.0" prefWidth="207.0" text="SportCars 8: MC-Laren - $4000/day" textFill="WHITE">
-                     <stylesheets>
+                    </stylesheets>
+                </Pane>
+                <Pane layoutX="1008.0" layoutY="468.0" prefHeight="275.0" prefWidth="304.0" styleClass="offer-background">
+                    <children>
+                        <Button layoutX="8.0" layoutY="226.0" mnemonicParsing="false" onAction="#selectCar8" prefHeight="35.0" prefWidth="207.0" text="SportCars 8: MC-Laren - $4000/day" textFill="WHITE">
+                            <stylesheets>
+                                <URL value="@../../../../../../oop_project/oop_project/carrental/src/main/resources/style/css/Catalog.css" />
+                                <URL value="@../../../../../../oop_project/oop_project/carrental/src/main/resources/style/css/main.css" />
+                            </stylesheets>
+                            <styleClass>
+                                <String fx:value="transparent-button" />
+                                <String fx:value="operaBtnBlue" />
+                            </styleClass>
+                        </Button>
+                        <ImageView fx:id="car8Image" fitHeight="205.0" fitWidth="327.0" layoutY="-17.0" pickOnBounds="true" preserveRatio="true" styleClass="White-shadow">
+                            <image>
+                                <Image url="@../../image/Cars/McLaren_570GT.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                    <stylesheets>
                         <URL value="@../../../../../../oop_project/oop_project/carrental/src/main/resources/style/css/Catalog.css" />
                         <URL value="@../../../../../../oop_project/oop_project/carrental/src/main/resources/style/css/main.css" />
-                     </stylesheets>
-                     <styleClass>
-                        <String fx:value="transparent-button" />
-                        <String fx:value="operaBtnBlue" />
-                     </styleClass>
-                  </Button>
-                  <ImageView fitHeight="205.0" fitWidth="327.0" layoutY="-17.0" pickOnBounds="true" preserveRatio="true" styleClass="White-shadow">
-                     <image>
-                        <Image url="@../../image/Cars/McLaren_570GT.png" />
-                     </image>
-                  </ImageView>
-               </children>
-               <stylesheets>
-                  <URL value="@../../../../../../oop_project/oop_project/carrental/src/main/resources/style/css/Catalog.css" />
-                  <URL value="@../../../../../../oop_project/oop_project/carrental/src/main/resources/style/css/main.css" />
-               </stylesheets>
-            </Pane>
-         </children>
-         <stylesheets>
-            <URL value="@../../css/Catalog.css" />
-            <URL value="@../../css/main.css" />
-         </stylesheets>
-      </Pane>
+                    </stylesheets>
+                </Pane>
+            </children>
+            <stylesheets>
+                <URL value="@../../css/Catalog.css" />
+                <URL value="@../../css/main.css" />
+            </stylesheets>
+        </Pane>
     </children>
 </AnchorPane>
