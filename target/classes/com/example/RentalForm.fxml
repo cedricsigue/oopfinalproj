@@ -8,7 +8,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="320.0" prefWidth="501.0" styleClass="b" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.RentalFormController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="487.0" prefWidth="760.0" styleClass="background-color" stylesheets="@../../css/Catalog.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.RentalFormController">
     <children>
         <TextField fx:id="nameField" layoutX="14.0" layoutY="120.0" prefHeight="46.0" prefWidth="171.0" promptText="Enter your full name" />
         <Text layoutX="14.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Full Name :" wrappingWidth="171.443359375">
@@ -16,7 +16,7 @@
                 <Font name="Ebrima Bold" size="15.0" />
             </font>
         </Text>
-        <Text layoutX="170.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Car Rental Form" wrappingWidth="180.4140625">
+        <Text layoutX="265.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Car Rental Form" wrappingWidth="180.4140625">
             <font>
                 <Font name="Corbel" size="25.0" />
             </font>
@@ -27,13 +27,16 @@
             </font>
         </Text>
         <TextField fx:id="contactField" layoutX="229.0" layoutY="120.0" prefHeight="46.0" prefWidth="171.0" promptText="Enter your contact number" />
-        <Text layoutX="14.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rental Date:" wrappingWidth="171.443359375">
+        <Text layoutX="445.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rental Date:" wrappingWidth="171.443359375">
             <font>
                 <Font name="Ebrima Bold" size="15.0" />
             </font>
         </Text>
-        <DatePicker fx:id="rentalDatePicker" layoutX="14.0" layoutY="213.0" prefHeight="46.0" prefWidth="140.0" promptText="Select rental date" />
-        <Button layoutX="326.0" layoutY="267.0" mnemonicParsing="false" onAction="#handleProceed" styleClass="transparent-button" stylesheets="@../../css/Catalog.css" text="Proceed to Confirmation" />
-        <Label fx:id="carLabel" layoutX="14.0" layoutY="30.0" prefHeight="30.0" prefWidth="473.0" text="Car Label" />
+        <DatePicker fx:id="rentalDatePicker" layoutX="445.0" layoutY="120.0" prefHeight="46.0" prefWidth="140.0" promptText="Select rental date" styleClass="transparent" />
+        <Button layoutX="225.0" layoutY="353.0" mnemonicParsing="false" onAction="#handleProceed" prefHeight="46.0" prefWidth="261.0" styleClass="confirm-btn" stylesheets="@../../css/rentalform.css" text="Proceed to Confirmation" />
+        <Label fx:id="carLabel" layoutX="14.0" layoutY="184.0" prefHeight="36.0" prefWidth="458.0" text="Car Label:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
     </children>
 </Pane>
