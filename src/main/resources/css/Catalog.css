@@ -50,3 +50,18 @@
     -fx-background-radius: 30;
 
 }
+.confirm-btn {
+    -fx-background-color: linear-gradient(to right, #4caf50, #43a047);
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-padding: 10 40 10 40;
+    -fx-background-radius: 30;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(76,175,80,0.2), 8, 0, 0, 2);
+    -fx-border-color: transparent;
+    -fx-transition: all 0.3s;
+}
+.background-color {
+    -fx-background-color: linear-gradient(to right, #36d1c4, #5b86e5);
+    -fx-background-radius: 30;
+}
