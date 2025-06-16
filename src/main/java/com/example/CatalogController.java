@@ -35,6 +35,7 @@ public class CatalogController {
     private void selectCar5(ActionEvent event) throws IOException {
         goToRentalForm(event, "Sports-Car 5: Lotus-Evija", 2000);
     }
+
     @FXML
     private void selectCar6(ActionEvent event) throws IOException {
         goToRentalForm(event, "Sports-Car 6: Noble-M500", 2000);
@@ -48,6 +49,17 @@ public class CatalogController {
     @FXML
     private void selectCar8(ActionEvent event) throws IOException {
         goToRentalForm(event, "Sports-Car 8: MC-Laren", 4000);
+    }
+
+    @FXML
+    private void viewRentalHistory(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("ViewRentals.fxml"));
+        Scene scene = new Scene(loader.load());
+
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.setResizable(false);
+        stage.show();
     }
 
     private void goToRentalForm(ActionEvent event, String carModel, int price) throws IOException {

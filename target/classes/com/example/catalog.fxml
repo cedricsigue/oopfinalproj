@@ -11,16 +11,26 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.CatalogController">
+<Pane maxHeight="Infinity" maxWidth="Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="808.0" prefWidth="1358.0" style="-fx-background-color: #2B2B2B;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.CatalogController">
     <children>
-        <Pane layoutY="-8.0" prefHeight="876.0" prefWidth="1467.0" styleClass="offer-background">
+        <Pane maxHeight="Infinity" maxWidth="Infinity" minHeight="-Infinity" minWidth="-Infinity" layoutY="-8.0" prefHeight="876.0" prefWidth="1467.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
             <children>
                 <VBox layoutX="24.0" layoutY="233.0" spacing="20" />
-                <Label alignment="CENTER" layoutX="454.0" layoutY="28.0" prefHeight="106.0" prefWidth="402.0" style="-fx-font-size: 30; -fx-text-fill: white;" styleClass="offer-background" stylesheets="@../../../../../../oop_project/oop_project/carrental/src/main/resources/style/css/Catalog.css" text="Available Cars" textFill="WHITE">
+                <Label layoutX="14.0" layoutY="14.0" text="Available Cars" textFill="#FFFFFF">
                     <font>
-                        <Font size="30.0" />
+                        <Font name="System Bold" size="24.0" />
                     </font>
                 </Label>
+                <Button layoutX="1200.0" layoutY="28.0" mnemonicParsing="false" onAction="#viewRentalHistory" prefHeight="35.0" prefWidth="150.0" text="View Rental History" textFill="WHITE">
+                    <stylesheets>
+                        <URL value="@../../css/Catalog.css" />
+                        <URL value="@../../css/main.css" />
+                    </stylesheets>
+                    <styleClass>
+                        <String fx:value="transparent-button" />
+                        <String fx:value="operaBtnBlue" />
+                    </styleClass>
+                </Button>
                 <Pane layoutX="24.0" layoutY="172.0" prefHeight="275.0" prefWidth="304.0" styleClass="offer-background">
                     <children>
                         <Button layoutX="8.0" layoutY="226.0" mnemonicParsing="false" onAction="#selectCar1" prefHeight="35.0" prefWidth="207.0" text="SportCars 1: MC-Laren - $2000/day" textFill="WHITE">
@@ -212,4 +222,4 @@
             </stylesheets>
         </Pane>
     </children>
-</AnchorPane>
+</Pane>

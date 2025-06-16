@@ -1,7 +1,3 @@
-ced,123
+ced,mabaho
 ced,pogi
-elizer,ponio
-elizer,ponio
-ced123,asd
-ced,123
-cedric,12345
+ced,pogi123

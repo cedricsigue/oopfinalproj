@@ -15,6 +15,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
@@ -26,6 +27,18 @@ public class SignUpController {
 
     @FXML
     private PasswordField password;
+
+    @FXML
+    private TextField passwordText;
+
+    @FXML
+    private PasswordField confirmPassword;
+
+    @FXML
+    private TextField confirmPasswordText;
+
+    @FXML
+    private ImageView showPasswordIcon;
 
     @FXML
     private Button createAccountBtn;
@@ -53,12 +66,47 @@ public class SignUpController {
     }
 
     @FXML
+    void showPasswordIconClick(MouseEvent event) {
+        if (password.isVisible()) {
+            passwordText.setText(password.getText());
+            password.setVisible(false);
+            passwordText.setVisible(true);
+
+            confirmPasswordText.setText(confirmPassword.getText());
+            confirmPassword.setVisible(false);
+            confirmPasswordText.setVisible(true);
+        } else {
+            password.setText(passwordText.getText());
+            password.setVisible(true);
+            passwordText.setVisible(false);
+
+            confirmPassword.setText(confirmPasswordText.getText());
+            confirmPassword.setVisible(true);
+            confirmPasswordText.setVisible(false);
+        }
+    }
+
+    @FXML
     void btnCreateClicked(ActionEvent event) {
         String usernameText = username.getText();
-        String passwordText = password.getText();
+        String passwordText;
+        String confirmPasswordText;
 
-        if (usernameText.isEmpty() || passwordText.isEmpty()) {
+        if (password.isVisible()) {
+            passwordText = password.getText();
+            confirmPasswordText = confirmPassword.getText();
+        } else {
+            passwordText = this.passwordText.getText();
+            confirmPasswordText = this.confirmPasswordText.getText();
+        }
+
+        if (usernameText.isEmpty() || passwordText.isEmpty() || confirmPasswordText.isEmpty()) {
             showAlert("Please fill in all fields.");
+            return;
+        }
+
+        if (!passwordText.equals(confirmPasswordText)) {
+            showAlert("Passwords do not match.");
             return;
         }
 

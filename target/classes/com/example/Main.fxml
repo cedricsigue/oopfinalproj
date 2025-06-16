@@ -9,27 +9,28 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
+<?import javafx.geometry.Insets?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="833.0" prefWidth="1258.0" style="-fx-background-color: #525252;" stylesheets="@css/mainPage.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mainPageController">
+<Pane maxHeight="Infinity" maxWidth="Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="832.0" prefWidth="1280.0" style="-fx-background-color: #2B2B2B;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.MainController">
     <children>
-      <Pane layoutX="874.0" prefHeight="833.0" prefWidth="386.0" style="-fx-background-color: #1b1b1b;">
+      <Pane maxHeight="Infinity" maxWidth="Infinity" minHeight="-Infinity" minWidth="-Infinity" layoutX="874.0" prefHeight="833.0" prefWidth="386.0" style="-fx-background-color: #1b1b1b;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Label layoutX="95.0" layoutY="137.0" text="100+" textFill="WHITE">
+            <Label layoutX="95.0" layoutY="137.0" text="100+" textFill="#FFFFFF">
                <font>
                   <Font name="System Bold" size="30.0" />
                </font>
             </Label>
-            <Label layoutX="95.0" layoutY="182.0" text="Types of machines" textFill="#bcbcbc">
+            <Label layoutX="95.0" layoutY="182.0" text="Types of machines" textFill="#E0E0E0">
                <font>
                   <Font size="14.0" />
                </font>
             </Label>
-            <Label layoutX="95.0" layoutY="280.0" text="20K+" textFill="WHITE">
+            <Label layoutX="95.0" layoutY="280.0" text="20K+" textFill="#FFFFFF">
                <font>
                   <Font name="System Bold" size="30.0" />
                </font>
             </Label>
-            <Label layoutX="95.0" layoutY="325.0" text="Clients served" textFill="#bcbcbc">
+            <Label layoutX="95.0" layoutY="325.0" text="Clients served" textFill="#E0E0E0">
                <font>
                   <Font size="14.0" />
                </font>
@@ -38,22 +39,22 @@
       </Pane>
       <Pane layoutX="7.0" prefHeight="833.0" prefWidth="380.0" style="-fx-background-color: #1b1b1b;">
          <children>
-            <Label layoutX="95.0" layoutY="137.0" text="100+" textFill="WHITE">
+            <Label layoutX="95.0" layoutY="137.0" text="100+" textFill="#FFFFFF">
                <font>
                   <Font name="System Bold" size="30.0" />
                </font>
             </Label>
-            <Label layoutX="95.0" layoutY="182.0" text="Types of machines" textFill="#bcbcbc">
+            <Label layoutX="95.0" layoutY="182.0" text="Types of machines" textFill="#E0E0E0">
                <font>
                   <Font size="14.0" />
                </font>
             </Label>
-            <Label layoutX="95.0" layoutY="280.0" text="20K+" textFill="WHITE">
+            <Label layoutX="95.0" layoutY="280.0" text="20K+" textFill="#FFFFFF">
                <font>
                   <Font name="System Bold" size="30.0" />
                </font>
             </Label>
-            <Label layoutX="95.0" layoutY="325.0" text="Clients served" textFill="#bcbcbc">
+            <Label layoutX="95.0" layoutY="325.0" text="Clients served" textFill="#E0E0E0">
                <font>
                   <Font size="14.0" />
                </font>
@@ -62,7 +63,7 @@
       </Pane>
 
         <!-- Headings -->
-        <Label layoutX="430.0" layoutY="125.0" prefHeight="97.0" prefWidth="402.0" styleClass="White-shadow" text="Rent the best" textFill="WHITE">
+        <Label layoutX="430.0" layoutY="125.0" prefHeight="97.0" prefWidth="402.0" styleClass="White-shadow" text="Rent the best" textFill="#FFFFFF">
             <font>
                 <Font size="60.0" />
             </font>
@@ -71,7 +72,7 @@
             <URL value="@../../css/main.css" />
          </stylesheets>
         </Label>
-        <Label layoutX="562.0" layoutY="199.0" prefHeight="88.0" prefWidth="114.0" styleClass="White-shadow" stylesheets="@../../css/Catalog.css" text="cars" textFill="WHITE">
+        <Label layoutX="562.0" layoutY="199.0" prefHeight="88.0" prefWidth="114.0" styleClass="White-shadow" stylesheets="@../../css/Catalog.css" text="cars" textFill="#FFFFFF">
             <font>
                 <Font size="60.0" />
             </font>
@@ -87,17 +88,17 @@
                     <children>
                         <AnchorPane prefHeight="65.0" prefWidth="1269.0">
                             <children>
-                                <Button layoutX="389.0" layoutY="13.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Home" textFill="WHITE">
+                                <Button layoutX="389.0" layoutY="13.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Home" textFill="#FFFFFF">
                                     <font>
                                         <Font name="System Bold" size="20.0" />
                                     </font>
                                 </Button>
-                                <Button layoutX="577.0" layoutY="13.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Service" textFill="WHITE">
+                                <Button layoutX="577.0" layoutY="13.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Service" textFill="#FFFFFF">
                                     <font>
                                         <Font name="System Bold" size="20.0" />
                                     </font>
                                 </Button>
-                                <Button layoutX="756.0" layoutY="13.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="About" textFill="WHITE">
+                                <Button layoutX="756.0" layoutY="13.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="About" textFill="#FFFFFF">
                                     <font>
                                         <Font name="System Bold" size="20.0" />
                                     </font>
