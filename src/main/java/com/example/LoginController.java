@@ -3,6 +3,12 @@ package com.example;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.List;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -66,6 +72,7 @@ public class LoginController {
     private Label tipLabel;
 
     private static final String USERS_FILE = "users.txt";
+    private boolean isRecoveryMode = false;
 
     @FXML
     void loginBtnClick(MouseEvent event) {
@@ -124,12 +131,81 @@ public class LoginController {
 
     @FXML
     void recoveryPassword(MouseEvent event) {
-        System.out.println("Recovery password label clicked!");
+        String username = emailInput.getText();
+        if (username.isEmpty()) {
+            showAlert("Please enter your username first.");
+            return;
+        }
+
+        if (userExists(username)) {
+            isRecoveryMode = true;
+            loginBtn.setVisible(false);
+            resetBtn.setVisible(true);
+            passwordLabel.setText("New Password");
+            showAlert("Info", "Please enter your new password", Alert.AlertType.INFORMATION);
+        } else {
+            showAlert("Username not found.");
+        }
+    }
+
+    private boolean userExists(String username) {
+        try (BufferedReader reader = new BufferedReader(new FileReader(USERS_FILE))) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                String[] parts = line.split(",");
+                if (parts.length == 2 && parts[0].equals(username)) {
+                    return true;
+                }
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return false;
     }
 
     @FXML
     void resetBtnClick(MouseEvent event) {
-        System.out.println("Reset password button clicked!");
+        String username = emailInput.getText();
+        String newPassword = passwordInputPass.isVisible() ? passwordInputPass.getText() : passwordInputText.getText();
+
+        if (newPassword.isEmpty()) {
+            showAlert("Please enter a new password.");
+            return;
+        }
+
+        if (updatePassword(username, newPassword)) {
+            showAlert("Success", "Password has been reset successfully!", Alert.AlertType.INFORMATION);
+            isRecoveryMode = false;
+            loginBtn.setVisible(true);
+            resetBtn.setVisible(false);
+            passwordLabel.setText("Password");
+            passwordInputPass.clear();
+            passwordInputText.clear();
+        } else {
+            showAlert("Error resetting password. Please try again.");
+        }
+    }
+
+    private boolean updatePassword(String username, String newPassword) {
+        try {
+            List<String> lines = Files.readAllLines(Paths.get(USERS_FILE));
+            List<String> newLines = new ArrayList<>();
+
+            for (String line : lines) {
+                String[] parts = line.split(",");
+                if (parts.length == 2 && parts[0].equals(username)) {
+                    newLines.add(username + "," + newPassword);
+                } else {
+                    newLines.add(line);
+                }
+            }
+
+            Files.write(Paths.get(USERS_FILE), newLines);
+            return true;
+        } catch (IOException e) {
+            e.printStackTrace();
+            return false;
+        }
     }
 
     @FXML

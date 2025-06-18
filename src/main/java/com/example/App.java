@@ -5,11 +5,19 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
+import java.io.FileWriter;
 
 public class App extends Application {
 
     @Override
     public void start(Stage primaryStage) {
+        // Clear rentals.txt at startup
+        try {
+            new FileWriter("rentals.txt", false).close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
         try {
             Pane root = FXMLLoader.load(getClass().getResource("Login.fxml"));
             Scene scene = new Scene(root);

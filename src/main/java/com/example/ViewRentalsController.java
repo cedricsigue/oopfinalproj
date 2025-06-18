@@ -64,7 +64,7 @@ public class ViewRentalsController {
     }
 
     @FXML
-    private void refreshRentals() {
+    public void refreshRentals() {
         ObservableList<Rental> rentals = FXCollections.observableArrayList(
                 RentalManager.getInstance().getAllRentals());
         rentalTable.setItems(rentals);

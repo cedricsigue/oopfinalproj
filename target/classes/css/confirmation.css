@@ -1,0 +1,35 @@
+.root {
+    -fx-background-color: #2B2B2B;
+}
+
+.label {
+    -fx-text-fill: white;
+}
+
+.confirmation-pane {
+    -fx-background-color: #3C3F41;
+    -fx-background-radius: 10;
+    -fx-padding: 20;
+}
+
+.button {
+    -fx-background-radius: 20;
+    -fx-cursor: hand;
+    -fx-font-size: 14px;
+    -fx-padding: 8 20 8 20;
+}
+
+#okButton {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+}
+
+.title-label {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+
+.message-label {
+    -fx-font-size: 16px;
+    -fx-wrap-text: true;
+}

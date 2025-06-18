@@ -6,8 +6,10 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 
-<Pane prefHeight="808.0" prefWidth="1358.0" style="-fx-background-color: #2B2B2B;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ConfirmationController">
+<Pane prefHeight="808.0" prefWidth="1358.0" style="-fx-background-color: #2B2B2B;" stylesheets="@../../css/confirmation.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ConfirmationController">
     <children>
         <VBox alignment="CENTER" layoutX="340.0" layoutY="200.0" prefWidth="600.0" spacing="20.0">
             <children>

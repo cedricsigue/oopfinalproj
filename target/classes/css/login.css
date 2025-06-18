@@ -1,0 +1,45 @@
+.root {
+    -fx-background-color: #2B2B2B;
+}
+
+.label {
+    -fx-text-fill: white;
+}
+
+.text-field {
+    -fx-background-color: #3C3F41;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: #808080;
+    -fx-background-radius: 20;
+    -fx-padding: 8;
+}
+
+.password-field {
+    -fx-background-color: #3C3F41;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: #808080;
+    -fx-background-radius: 20;
+    -fx-padding: 8;
+}
+
+.button {
+    -fx-background-radius: 20;
+    -fx-cursor: hand;
+    -fx-font-size: 14px;
+    -fx-padding: 8 20 8 20;
+}
+
+#loginButton {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+}
+
+#signUpButton {
+    -fx-background-color: #2196F3;
+    -fx-text-fill: white;
+}
+
+.title-label {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}

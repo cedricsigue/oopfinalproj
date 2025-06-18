@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<Pane prefHeight="808.0" prefWidth="1358.0" style="-fx-background-color: #2B2B2B;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ViewRentalsController">
+<Pane prefHeight="808.0" prefWidth="1358.0" stylesheets="@../../css/view-rentals.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ViewRentalsController">
     <children>
         <VBox layoutX="10.0" layoutY="10.0" prefHeight="812.0" prefWidth="1260.0" spacing="10">
             <children>

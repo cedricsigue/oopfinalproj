@@ -1,3 +1,1 @@
-ced,mabaho
-ced,pogi
-ced,pogi123
+ced,1234

@@ -36,6 +36,8 @@ public class RentalManager {
     }
 
     public List<Rental> getAllRentals() {
+        rentals.clear(); // Clear existing rentals
+        loadRentals(); // Reload from file
         return new ArrayList<>(rentals);
     }
 
